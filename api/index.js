@@ -27,6 +27,12 @@ mongoose.connection.on("disconnected", () => {
     console.log('disconnected to data base ')
 })
 
+
+app.get("/",(req,res) => {
+   
+    res.send('ok on the server ')
+})
+
 app.listen(8800,()=> 
 
 console.log('we are in the server ')
